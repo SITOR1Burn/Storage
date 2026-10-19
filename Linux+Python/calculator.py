@@ -82,7 +82,6 @@ def result():
         text_result.config(text=f"Результат: {value}")
 
 
-# Матрица кнопок операций: название и функция
 operations = [
     ("+", summy),
     ("-", diff),
@@ -91,7 +90,6 @@ operations = [
     ("=", result)
 ]
 
-# Кнопки цифр от 0 до 9
 numbers_frame = tk.Frame(root)
 numbers_frame.pack()
 
@@ -104,7 +102,6 @@ for number in range(10):
     )
     button.grid(row=number // 3, column=number % 3, padx=3, pady=3)
 
-# Кнопки арифметических операций
 operations_frame = tk.Frame(root)
 operations_frame.pack(pady=10)
 
